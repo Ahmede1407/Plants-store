@@ -2,6 +2,7 @@
 
 /* -------- Basis ---------- */
 :root {
+  --white: #fff;
   --dark-color: #23272b;
   --olive: #b2d3a6;
   --green: #00ba69;
@@ -10,6 +11,9 @@
   --light-color: #ece7df;
 }
 
+*::selection {
+  background-color: var(--olive);
+}
 html {
   scroll-behavior: smooth;
 }
@@ -25,7 +29,7 @@ h1 {
 }
 .curved-btn {
   border-top-left-radius: 1.2rem;
-  border-top-right-radius: 1.2rem;
+  border-bottom-right-radius: 1.2rem;
   padding: 1rem 2rem;
 }
 
@@ -115,3 +119,50 @@ h1 {
     transform: scale(1) rotate(360deg);
   }
 }
+
+/* <!-- Navbar Section --> */
+#navbar {
+  background-color: var(--darkGreen);
+}
+.fa-bars {
+  color: var(--white);
+}
+.nav-link {
+  color: var(--white);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  text-decoration: underline;
+  color: var(--olive);
+}
+@media screen and (max-width: 768px) {
+  .navbar-toggler:focus {
+    border: none;
+    outline: none;
+  }
+  .signin-nav {
+    margin-left: 0.5rem;
+    font-weight: bold;
+  }
+}
+/* <!-- End of Navbar Section --> */
+
+/* <!-- Header Section --> */
+.height-max {
+  min-height: calc(100vh - 70px);
+  background: url("../img/background.jpg") center/cover no-repeat;
+}
+.header-btn {
+  transition: all 0.4s ease;
+}
+@media screen and (min-width: 768px) {
+  .header h1 {
+    font-size: 4rem;
+  }
+  .header-p {
+    max-width: 500px;
+    font-size: 1.2rem;
+  }
+}
+/* <!-- End of Header Section --> */
