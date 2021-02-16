@@ -241,3 +241,21 @@ h1 {
   }
 }
 /* <!-- End of collections  Section  --> */
+
+/* <!-- About Section --> */
+.about {
+  background-color: var(--light-color);
+}
+.about .about-img {
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .about h1 {
+    text-align: center;
+    margin: 2.5rem auto;
+  }
+  .about .about-img {
+    height: 400px;
+  }
+}
+/* <!-- end of About Section --> */
