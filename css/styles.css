@@ -166,3 +166,78 @@ h1 {
   }
 }
 /* <!-- End of Header Section --> */
+
+/* <!-- collections  Section  --> */
+.collections {
+  margin-top: 15rem;
+}
+.collections .card {
+  border: none;
+  position: relative;
+}
+.collections .card-img img {
+  width: 170px;
+  height: 180px;
+  border-radius: 40%;
+  position: absolute;
+  top: -45%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.collections .card-body {
+  background-color: var(--darkGreen);
+}
+.curved-border {
+  border-top-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+.collections .card-text h4 {
+  color: var(--olive);
+}
+.collections-btn {
+  background-color: var(--white);
+  border-color: var(--darkGreen);
+}
+.collections-btn:hover {
+  background-color: var(--darkGreen);
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .collections .card-img img {
+    width: 120px;
+    height: 140px;
+    top: -25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .collections {
+    margin-top: 7rem;
+  }
+  .collections .card-img img {
+    width: 110px;
+    height: 130px;
+    top: 65%;
+    left: 0;
+    transform: translate(10%, -50%);
+  }
+  .collections .card-body {
+    padding: 0;
+    margin: 0 0 6rem 0;
+  }
+  .collections .card-text {
+    padding: 0 1rem !important;
+  }
+  .collections .card-body button {
+    margin-bottom: 0.6rem;
+    margin-left: 1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .collections .card-img img {
+    width: 100px;
+    height: 120px;
+    top: 70%;
+    left: 0;
+  }
+}
+/* <!-- End of collections  Section  --> */
