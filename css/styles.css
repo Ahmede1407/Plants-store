@@ -259,3 +259,58 @@ h1 {
   }
 }
 /* <!-- end of About Section --> */
+
+/* <!-- Featured Section --> */
+.featured-card {
+  padding: 0 !important;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-color: var(--olive);
+}
+
+.featured-btn {
+  border: 1px solid var(--olive);
+  border-top-left-radius: 0.9rem;
+  border-bottom-right-radius: 0.9rem;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  color: var(--darkGreen);
+}
+
+.featured-title {
+  color: var(--darkGreen);
+}
+
+.featured-price {
+  color: var(--orange);
+  font-size: 1.5rem;
+}
+
+.featured-img-div {
+  overflow: hidden;
+}
+
+.featured-img {
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 0;
+  height: 100%;
+  transition: transform 0.5s ease;
+}
+
+.featured-img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+  .featured-card {
+    flex-direction: row;
+    margin-bottom: 1rem !important;
+  }
+
+  .featured-img {
+    width: 110px;
+    margin-right: 1rem;
+    justify-content: center;
+  }
+}
+/* <!-- end of Featured Section --> */
