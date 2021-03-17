@@ -434,3 +434,8 @@ h1 {
   }
 }
 /* <!-- end of Footer Section --> */
+
+/* ======== About us Page ======= */
+.about-page {
+  background-color: var(--white);
+}
