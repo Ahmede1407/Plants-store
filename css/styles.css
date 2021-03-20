@@ -3,6 +3,7 @@
 /* -------- Basis ---------- */
 :root {
   --white: #fff;
+  --close: #fe0000;
   --dark-color: #23272b;
   --olive: #b2d3a6;
   --green: #00ba69;
@@ -439,3 +440,131 @@ h1 {
 .about-page {
   background-color: var(--white);
 }
+/* ======== end of About us Page ======= */
+
+/* ============== store page ============== */
+/* store list section */
+.filter-btn,
+.plant-name {
+  cursor: pointer;
+}
+.filter-btn:hover,
+.plant-name:hover {
+  text-decoration: underline;
+  color: var(--orange);
+}
+@media screen and (max-width: 768px) {
+  .filter {
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .filter ul {
+    flex-direction: row !important;
+  }
+  .filter-btn {
+    margin-right: 1.5rem;
+  }
+}
+
+.plant-value {
+  font-size: 2rem;
+}
+.plant-card {
+  border: none;
+  overflow: hidden;
+}
+.plant-img-div {
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.plant-img-div img {
+  transition: all 0.3s linear;
+}
+.add-btn {
+  position: absolute;
+  width: 80%;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: white;
+  opacity: 0.8;
+  font-size: 1.5rem;
+  visibility: hidden;
+}
+.add-btn:hover {
+  background-color: white;
+  border: white;
+  opacity: 1;
+  color: var(--dark-color);
+}
+.plant-img-div:hover .add-btn {
+  visibility: visible;
+}
+/* end of store list section */
+
+/* favourite */
+.favourite .horizontal-line {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* ============== end of store page ============== */
+
+/* ============ cart ============ */
+.cart-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+}
+.cart-container.show-cart-modal {
+  display: block;
+}
+
+.cart-modal {
+  background-color: var(--white);
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 350px;
+  z-index: 10;
+  overflow: hidden;
+  animation-name: cartopen;
+  animation-duration: 0.5s;
+}
+@keyframes cartopen {
+  from {
+    transform: translateX(350px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.cart-notification {
+  background-color: #eee;
+}
+.cart-added {
+  position: relative;
+}
+.cart-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: var(--close);
+}
+.cart-close:hover {
+  color: var(--close);
+}
+
+.continue-btn:hover {
+  background: var(--light-color);
+  color: #000;
+}
+/* ============ end of cart ============ */

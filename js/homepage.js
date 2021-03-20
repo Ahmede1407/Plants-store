@@ -1,31 +1,31 @@
-import CreatePlants from './createPlant.js';
+import CreatePlants from "./createPlant.js";
 
 // show loader when loading
-window.addEventListener('load', () => document.querySelector('.loader').classList.add('hideLoader'))
-
+window.addEventListener("load", () =>
+  document.querySelector(".loader").classList.add("hideLoader")
+);
 
 // Scroll Top
-function scrollTop(){
-  let scrollTop = document.querySelector('#scrollTop');
+function scrollTop() {
+  let scrollTop = document.querySelector("#scrollTop");
 
-  if ( this.scrollY >= 560){
-    scrollTop.classList.add('show-arrow');
-  }else{
-    scrollTop.classList.remove('show-arrow');
+  if (this.scrollY >= 400) {
+    scrollTop.classList.add("show-arrow");
+  } else {
+    scrollTop.classList.remove("show-arrow");
   }
 }
-window.addEventListener('scroll', scrollTop);
-
+window.addEventListener("scroll", scrollTop);
 
 // index.html
-const DisplayFeaturedPlants = ((plants) => {
-    const featuredPlants = plants.featuredPlants;
-    const featured = document.getElementById('featured-container');
-    featured.innerHTML = '';
-  
-    let data = '';
-    featuredPlants.forEach(plant => {
-      data += `
+const DisplayFeaturedPlants = (plants) => {
+  const featuredPlants = plants.featuredPlants;
+  const featured = document.getElementById("featured-container");
+  featured.innerHTML = "";
+
+  let data = "";
+  featuredPlants.forEach((plant) => {
+    data += `
         <!-- single item -->
         <div class="col-lg-3 col-md-6">
           <div class="card px-2 pt-4 mb-3 featured-card curved-border">
@@ -42,18 +42,17 @@ const DisplayFeaturedPlants = ((plants) => {
           </div>
         </div>
         <!-- end of single item -->
-        `
-    });
-  
-    featured.innerHTML = data;
-  
+        `;
   });
-  
-  fetch('data/data.json')
-    .then((response) => {
-      return response.json()
-    })
-    .then((data) => {
-      const plants = CreatePlants(data.data);
-      DisplayFeaturedPlants(plants);
-    })
+
+  featured.innerHTML = data;
+};
+
+fetch("data/data.json")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    const plants = CreatePlants(data.data);
+    DisplayFeaturedPlants(plants);
+  });

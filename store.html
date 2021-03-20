@@ -78,6 +78,113 @@
     <!-- End of Navbar Section -->
 
 
+    <!-- Cart Section -->
+    <div class="cart cart-container" id="cart">
+        <!-- cart modal -->
+        <div class="cart-modal">
+            <!-- message -->
+            <div>
+                <div class="d-flex justify-content-center cart-notification">
+                    <p class="font-weight-bold text-uppercase py-3 my-auto cart-added">
+                        <i class="fas fa-check-circle text-success"></i>
+                        Just added to your cart
+                    </p>
+                    <i class="fas fa-times-circle my-auto cart-close btn" id="cart-close"></i>
+                </div>
+                <p class="px-4 my-2" id="message">message</p>
+            </div>
+            <!-- end of message -->
+
+            <!-- subtotal -->
+            <div class="px-3 mt-3 d-flex justify-content-between" id="cart-subtotal-container">
+                <p class="text-uppercase">
+                    subtotal ( <span class="cart-item-number">2</span> item<span id="plural">s</span> )
+                </p>
+                <p class="font-weight-bold">$<span id="cart-item-total">9.99</span></p>
+            </div>
+            <!-- end of subtotal -->
+
+            <!-- cart buttons -->
+            <div class="cart-buttons-container px-3 my-3">
+                <a href="" class="w-100 my-2 btn btn-dark text-uppercase" id="clear-cart">view cart</a>
+                <button class="w-100 btn btn-outline-dark text-uppercase continue-btn">continue shopping</button>
+            </div>
+            <!-- end of cart buttons -->
+        </div>
+        <!-- end of cart modal -->
+    </div>
+    <!-- end of Cart Section -->
+
+
+    <!-- Store list Section -->
+    <section class="store pt-5" id="store">
+        <div class="container">
+            <div class="row">
+                <!-- categories -->
+                <div class="col-md-2 filter" id="filter">
+                    <h4 class="categories-heading text-capitalize font-weight-bold">
+                        categories
+                    </h4>
+                    <ul class="nav d-flex flex-column text-capitalize">
+                        <li class="filter-btn my-1" data-filter="all">all plants</li>
+                        <li class="filter-btn my-1" data-filter="small">small</li>
+                        <li class="filter-btn my-1" data-filter="medium">medium</li>
+                        <li class="filter-btn my-1" data-filter="large">large</li>
+                    </ul>
+                </div>
+                <!-- end of categories -->
+
+                <!-- item list -->
+                <div class="col-md-10 item-list" id="item-list">
+                    <div class="container">
+                        <h5 class="text-uppercase filtered-plants">all plants</h5>
+                        <div class="row" id="store-container"></div>
+                    </div>
+                </div>
+                <!-- end of item list -->
+            </div>
+        </div>
+    </section>
+    <!-- end of Store list Section -->
+
+
+    <!-- Favourite Section -->
+    <section class="favourite my-5" id="favourite">
+        <div class="container">
+            <div class="row">
+                <div class="horizontal-line"></div>
+                <h1 class="text-uppercase mx-auto my-4">our best sellers</h1>
+            </div>
+
+            <div class="row mx-auto my-auto" id="favourite-info">
+                <!-- single item -->
+                <div class="col-md-3 col-6">
+                    <div class="card plant-card">
+                        <div class="plant-img-div">
+                            <img src="./img/small-1.jpg" alt="small-1">
+                        </div>
+                        <!-- card body -->
+                        <div class="card-body px-0">
+                            <div class="plant-info d-flex justify-content-between">
+                                <!-- plant name -->
+                                <div class="plant-text justify-content-start">
+                                    <h6 class="text-capitalize">Lorem, ipsum.</h6>
+                                </div>
+                                <!-- plant price -->
+                                <div class="plant-value align-self center">
+                                    $<span class="plant-price">25</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end of card body -->
+                    </div>
+                </div>
+                <!-- end of single item -->
+            </div>
+        </div>
+    </section>
+    <!-- end of Favourite Section -->
+
 
 
 
