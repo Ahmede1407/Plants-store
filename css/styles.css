@@ -511,6 +511,59 @@ h1 {
 
 /* ============== end of store page ============== */
 
+/* ============== product page ============== */
+/* ----------single prodcut section-------- */
+.shipping-guide {
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  cursor: pointer;
+}
+
+.ruler {
+  color: var(--green);
+}
+
+.sun {
+  color: tomato;
+}
+
+.holding-heart {
+  color: rgb(212, 80, 80);
+}
+
+/* modal */
+.shipping-info li {
+  margin: 0.5rem 0;
+}
+
+.shippingModal {
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.close {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .modal-img img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.back-btn:hover {
+  text-decoration: none;
+}
+
+/* ============== end of product page ============== */
+
 /* ============ cart ============ */
 .cart-container {
   background-color: rgba(0, 0, 0, 0.4);
