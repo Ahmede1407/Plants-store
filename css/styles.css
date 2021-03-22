@@ -240,7 +240,7 @@ h1 {
     top: -25%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .collections {
     margin-top: 7rem;
   }
@@ -258,7 +258,7 @@ h1 {
   .collections .card-text {
     padding: 0 1rem !important;
   }
-  .collections .card-body button {
+  .collections .card-body a {
     margin-bottom: 0.6rem;
     margin-left: 1rem;
   }
@@ -467,7 +467,7 @@ h1 {
 }
 
 .plant-value {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 .plant-card {
   border: none;
@@ -502,6 +502,13 @@ h1 {
 .plant-img-div:hover .add-btn {
   visibility: visible;
 }
+
+@media screen and (max-width: 768px) {
+  .plant-name {
+    font-size: 1rem;
+  }
+}
+
 /* end of store list section */
 
 /* favourite */
@@ -518,15 +525,12 @@ h1 {
   border-bottom: 1px solid #dbdbdb;
   cursor: pointer;
 }
-
 .ruler {
   color: var(--green);
 }
-
 .sun {
   color: tomato;
 }
-
 .holding-heart {
   color: rgb(212, 80, 80);
 }
@@ -535,17 +539,14 @@ h1 {
 .shipping-info li {
   margin: 0.5rem 0;
 }
-
 .shippingModal {
   position: relative;
 }
-
 .modal-close {
   position: absolute;
   top: 1rem;
   right: 1rem;
 }
-
 .close {
   font-size: 2rem;
 }
@@ -557,12 +558,17 @@ h1 {
     object-fit: cover;
   }
 }
-
 .back-btn:hover {
   text-decoration: none;
 }
-
 /* ============== end of product page ============== */
+
+/* ============== Contact Us page ============== */
+.hours p,
+.hours span {
+  font-size: 1.2rem;
+}
+/* ============== end of Contact Us page ============== */
 
 /* ============ cart ============ */
 .cart-container {
